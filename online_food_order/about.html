@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieExpress - Online Food Ordering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap  CSS cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Topbar -->
+        <div class="bg-black py-2">
+            <div
+                class="container d-flex flex-column flex-sm-row justify-content-end align-items-center text-white small">
+
+                <span class="d-flex align-items-center gap-2 me-sm-3 mb-2 mb-sm-0">
+                    <i class="fa-solid fa-phone text-danger"></i>
+                    +91 000 123 00
+                </span>
+
+                <span class="d-flex align-items-center gap-2 me-sm-3 mb-2 mb-sm-0">
+                    <i class="fa-regular fa-envelope text-danger"></i>
+                    contact1234@example.com
+                </span>
+
+                <span class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    Lassen, Yuba City, California
+                </span>
+
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-navbar">
+            <div class="container d-flex align-items-center">
+
+                <!-- Logo-->
+                <a class="navbar-brand fw-bold order-1 order-lg-1 navbar_brand" href="./index.html">
+                    <img src="./images/others/food_logo.png" alt="food_logo">
+                </a>
+
+                <!-- Toggler-->
+                <button class="navbar-toggler order-3 order-lg-2 ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav links  -->
+                <div class="collapse navbar-collapse justify-content-center order-2 order-lg-1" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link  text-white link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link active" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./orders.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Buttons  -->
+                <div class="d-flex ms-auto order-4 order-lg-3">
+                    <a class="btn explore-btn me-2" href="./signup.html">Sign Up</a>
+                    <a class="btn explore-btn" href="./login.html">Log In</a>
+                </div>
+
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <!-- banner -->
+        <section class="about-banner position-relative text-white">
+            <div class="overlay"></div>
+            <div class="container text-center py-5">
+                <h1 class="display-4 fw-bold mb-3">About <span class="text-warning">FoodieExpress</span></h1>
+                <p class="fs-5 mb-4">
+                    Fresh meals delivered fast to your doorstep. Discover convenience, flavor, and quality with every
+                    order.
+                </p>
+                <a href="./menu.html" class="btn btn-warning">Explore Menu</a>
+            </div>
+        </section>
+        <!-- about part -->
+        <section class="about-section section_padding bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Image -->
+                    <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up-right">
+                        <figure class="about_food">
+                            <img src="./images/others/about1.jpg" class="img-fluid rounded shadow" alt="About Food">
+                        </figure>
+                    </div>
+                    <!-- Text Content -->
+                    <div class="col-md-6" data-aos="fade-up-left">
+                        <h2 class="fw-bold fs-1 mb-3 text-black">
+                            About <span class="text-warning">FoodieExpress</span>
+                        </h2>
+                        <p class="mb-3 fs-6 text-muted">
+                            At FoodieExpress, we bring your favorite meals from top local restaurants straight to your
+                            door.
+                            Fresh, fast, and always delicious – every order is crafted with care and delivered hot.
+                        </p>
+                        <p class="mb-4 fs-6 text-muted">
+                            Our mission is simple: make online food ordering easy, convenient, and delightful for
+                            everyone.
+                            Explore our menu, place your order, and enjoy a world of flavors in minutes.
+                        </p>
+                        <a href="./menu.html" class="btn btn-warning">Explore Menu</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--work part  -->
+        <section class="how-works section_padding bg-black">
+            <div class="container text-center">
+
+                <!-- Heading -->
+                <h2 class="fw-bold mb-3 fs-1 fs-md-1"> <i class="bi bi-diagram-3-fill me-2"></i>
+                    How It <span class="text-warning">Works</span>
+                </h2>
+                <p class="text-light mb-5">
+                    Ordering your favorite food is simple, fast, and convenient.
+                </p>
+
+                <div class="row g-4">
+
+                    <!-- Step 1 -->
+                    <div class="col-12 col-md-4" data-aos="flip-left">
+                        <div class="work-card p-4 h-100 bg-info">
+                            <div class="step-number text-black">01</div>
+                            <div class="icon mb-3">&#128241</div>
+                            <h5 class="fw-bold">Choose Your Meal</h5>
+                            <p class="text-muted small">
+                                Browse our menu and select your favorite dishes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-12 col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="work-card p-4 h-100 bg-info">
+                            <div class="step-number text-black">02</div>
+                            <div class="icon mb-3">&#128104;&#8205;&#127859;</div>
+                            <h5 class="fw-bold">We Cook Fresh</h5>
+                            <p class="text-muted small">
+                                Our chefs prepare your meal fresh and hot.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-12 col-md-4" data-aos="flip-right">
+                        <div class="work-card p-4 h-100 bg-info">
+                            <div class="step-number text-black">03</div>
+                            <div class="icon mb-3">&#128666;</div>
+                            <h5 class="fw-bold">Fast Delivery</h5>
+                            <p class="text-muted small">
+                                Get your food delivered quickly to your doorstep.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- faq part -->
+        <section class="faq-section section_padding bg-black">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold fs-1 fs-md-1 text-info">
+                        <i class="fa-solid fa-burger text-warning me-2"></i>
+                        Frequently Asked <span class="text-warning">Questions</span>
+                        <i class="fa-solid fa-question text-warning me-2"></i>
+                    </h2>
+                    <p class="text-secondary">
+                        Everything you need to know about ordering, delivery, and payments.
+                    </p>
+                </div>
+
+                <!-- FAQ Accordion -->
+                <div class="accordion custom-accordion" id="foodFaq">
+
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed fw-semibold bg-warning" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                How do I place an order?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#foodFaq">
+                            <div class="accordion-body text-muted">
+                                Simply browse our menu, add items to your cart, and proceed to checkout.
+                                Choose your payment method and confirm your order.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                How long does delivery take?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#foodFaq">
+                            <div class="accordion-body text-muted">
+                                Delivery usually takes 30-45 minutes depending on your location and order volume.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed fw-semibold bg-warning" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                What payment methods are accepted?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#foodFaq">
+                            <div class="accordion-body text-muted">
+                                We accept credit/debit cards, UPI, net banking, and cash on delivery.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                Can I track my order?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#foodFaq">
+                            <div class="accordion-body text-muted">
+                                Yes! After placing your order, you can track it live from your account dashboard.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--vedio part  -->
+        <section class="video section_padding bg-light">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-danger fs-1">About Our Online Food Ordering Service</h2>
+                    <p class="text-muted">Fast, Fresh & Delivered to Your Doorstep</p>
+                </div>
+
+                <div class="row align-items-center">
+
+                    <!-- Text Card -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card shadow-lg border-0 h-100">
+                            <div class="card-body p-4">
+                                <h4 class="card-title text-dark fw-bold mb-3">
+                                    Delicious Food, Anytime
+                                </h4>
+                                <p class="card-text text-muted">
+                                    Our online food ordering platform allows customers to browse menus,
+                                    place orders easily, and enjoy fast home delivery. We partner with
+                                    top restaurants to bring you fresh and hygienic meals.
+                                </p>
+                                <p class="card-text text-muted">
+                                    Whether you're craving pizza, burgers, traditional meals, or desserts,
+                                    we make ordering simple, secure, and convenient.
+                                </p>
+                                <a href="./menu.html" class="btn btn-danger mt-3 button">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card shadow-lg border-0 h-100">
+                            <div class="ratio ratio-16x9">
+                                <video controls autoplay loop muted>
+                                    <source src="./vedio/food.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--food section  -->
+        <section class="food-section section_padding ">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-danger fs-1"><i class="bi bi-shop-window me-2"></i> Our Popular Dishes</h2>
+                    <p class="text-muted">Freshly prepared and delivered hot to your doorstep</p>
+                </div>
+
+                <!-- Row 1 -->
+                <div class="row g-4">
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12" >
+                        <div class="card food-card shadow">
+                            <div class="food-img">
+                                <img src="./images/products/card_1.jpg" alt="Pizza">
+                                <div class="overlay-icons">
+                                    <a href="#"><i class="bi bi-share-fill"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="food-title">Cheese Pizza</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12" >
+                        <div class="card food-card shadow">
+                            <div class="food-img">
+                                <img src="./images/products/card2.jpg" alt="Burger">
+                                <div class="overlay-icons">
+                                    <a href="#"><i class="bi bi-share-fill"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="food-title">Chicken Burger</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12" >
+                        <div class="card food-card shadow">
+                            <div class="food-img">
+                                <img src="./images/products/card3.jpg" alt="Pasta">
+                                <div class="overlay-icons">
+                                    <a href="#"><i class="bi bi-share-fill"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="food-title">Creamy Pasta</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Row 2 -->
+                <div class="row g-4 mt-1">
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card food-card shadow">
+                            <div class="food-img">
+                                <img src="./images/products/card4.jpg" alt="Sandwich">
+                                <div class="overlay-icons">
+                                    <a href="#"><i class="bi bi-share-fill"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="food-title">Grilled Sandwich</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card food-card shadow">
+                            <div class="food-img">
+                                <img src="./images/products/card5.jpg" alt="Salad">
+                                <div class="overlay-icons">
+                                    <a href="#"><i class="bi bi-share-fill"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="food-title">Healthy Salad</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12" >
+                        <div class="card food-card shadow">
+                            <div class="food-img">
+                                <img src="./images/products/card6.jpg" alt="Dessert">
+                                <div class="overlay-icons">
+                                    <a href="#"><i class="bi bi-share-fill"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="food-title">Chocolate Dessert</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+
+            <div class="row gy-4">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a href="#" class="d-inline-block mb-2 footer_brand" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <img src="./images/others/food_logo.png" alt="FoodieExpress">
+                    </a>
+                    <p class="small">
+                        Delivering fresh & delicious meals right to your door. Taste the difference every day!
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 text-center text-md-start">
+                    <h5 class="mb-3 text-warning fs-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Quick
+                        Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Home</a></li>
+                        <li><a href="./menu.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Menu</a></li>
+                        <li><a href="./orders.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Orders</a></li>
+                        <li><a href="./contact.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3 text-warning fs-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Support
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Delivery Info</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3 text-warning fs-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        Subscribe</h5>
+                    <p class="small" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Get exclusive deals &
+                        fresh updates directly in your inbox.</p>
+                    <form class="d-flex flex-column flex-sm-row gap-2" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <input type="email" class="form-control" placeholder="Enter email" required>
+                        <button type="submit" class="btn btn-warning text-dark fw-bold">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="bg-secondary my-4">
+
+            <div class="row">
+                <div class="col text-center small">
+                    &copy; 2026 <a href="#" class="text-light">FoodieExpress.</a> All Rights Reserved.
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- poper js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

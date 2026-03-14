@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online Food order | Sign Up</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body>
+
+    <div class="signup-wrapper">
+
+        <!-- LEFT CONTENT -->
+        <div class="signup-info">
+            <h1>Join Our Foodie Community</h1>
+            <p>
+                Create your account to explore delicious meals, order your favorite dishes,
+                and enjoy fast home delivery anytime.
+            </p>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="signup-form">
+            <h2>Create Account</h2>
+
+            <form action="backend/signup.php" method="POST" id="rForm">
+                <div class="field">
+                    <input type="text" name="f_name" id="f_name" required>
+                    <label>Full Name</label>
+                    <p id="firstCheck" class="error"></p>
+                </div>
+
+                <div class="field">
+                    <input type="email" name="email" id="email" required>
+                    <label>Email Address</label>
+                    <p id="emailCheck" class="error"></p>
+                </div>
+
+                <div class="field">
+                    <input type="password" name="psw" id="psw" required>
+                    <label>Password</label>
+                    <p id="pswCheck" class="error"></p>
+                </div>
+
+                <div class="field">
+                    <input type="password" name="c_psw" id="c_psw" required>
+                    <label>Confirm Password</label>
+                    <p id="cPCheck" class="error"></p>
+                </div>
+
+                <div class="field">
+                    <input type="number" name="contact" id="contact" required>
+                    <label>Phone Number</label>
+                    <p id="contactCheck" class="error"></p>
+                </div>
+
+               <button type="submit">Create Account</button>
+
+                <p class="login-link">
+                    Already have an account?
+                    <a href="./login.html">Log In</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

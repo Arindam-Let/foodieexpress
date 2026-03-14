@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>FoodieExpress | Login</title>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Welcome To Login Page</h2>
+            <p>Login to FoodieExpress </p>
+           <form action="backend/login.php" method="POST" id="rForm">
+                <div class="input-box">
+                    <input type="email" name="email" id="email"  required>
+                    <label>Email Address</label>
+                    <p id="emailCheck" class="error"></p>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="psw" id="psw" required>
+                    <label>Password</label>
+                    <p id="pswCheck" class="error"></p>
+                </div>
+                <div class="button">
+                     <button type="submit">Sign In</button>
+                </div>
+               
+
+                <div class="links">
+                    <a href="./forget.html">Forgot Password?</a>
+                    <a href="./signup.html">Create Account</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

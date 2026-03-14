@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #47495f, #e09ec3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN WRAPPER */
+.signup-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    margin: 40px;
+}
+
+/* LEFT SIDE */
+.signup-info {
+    flex: 1;
+    background-image: url("../images/products/chiken.webp") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    padding: 50px;
+    color: #fff;
+    position: relative;
+}
+
+.signup-info::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.signup-info h1,
+.signup-info p {
+    position: relative;
+    z-index: 1;
+}
+
+.signup-info h1 {
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.signup-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* RIGHT FORM */
+.signup-form {
+    flex: 1;
+    padding: 50px 40px;
+    background-color:khaki;
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2b2d42;
+    font-size: 40px;
+}
+
+/* INPUT FIELDS */
+.field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.field input {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.field label {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: #999;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.field input:focus+label,
+.field input:valid+label {
+    top: -8px;
+    font-size: 20px;
+    color: #c17c3a;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding:15px;
+    background: #c17c3a;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #eed70a;
+    color: black;
+}
+
+/* LINK */
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.login-link a {
+    color: #5e3ac1;
+    /* text-decoration: none; */
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .signup-wrapper {
+        flex-direction: column;
+    }
+
+    .signup-info {
+        height: 200px;
+        padding: 30px;
+    }
+}

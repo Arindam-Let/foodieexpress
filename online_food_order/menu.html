@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieExpress - Online Food Ordering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap  CSS cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Topbar -->
+        <div class="bg-black py-2">
+            <div
+                class="container d-flex flex-column flex-sm-row justify-content-end align-items-center text-white small">
+
+                <span class="d-flex align-items-center gap-2 me-sm-3 mb-2 mb-sm-0">
+                    <i class="fa-solid fa-phone text-danger"></i>
+                    +91 000 123 00
+                </span>
+
+                <span class="d-flex align-items-center gap-2 me-sm-3 mb-2 mb-sm-0">
+                    <i class="fa-regular fa-envelope text-danger"></i>
+                    contact1234@example.com
+                </span>
+
+                <span class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    Lassen, Yuba City, California
+                </span>
+
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-navbar">
+            <div class="container d-flex align-items-center">
+
+                <!-- Logo-->
+                <a class="navbar-brand fw-bold order-1 order-lg-1 navbar_brand" href="./index.html">
+                    <img src="./images/others/food_logo.png" alt="food_logo">
+                </a>
+
+                <!-- Toggler-->
+                <button class="navbar-toggler order-3 order-lg-2 ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav links  -->
+                <div class="collapse navbar-collapse justify-content-center order-2 order-lg-1" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link  text-white link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link active" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./orders.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Buttons  -->
+                <div class="d-flex ms-auto order-4 order-lg-3">
+                    <a class="btn explore-btn me-2" href="./signup.html">Sign Up</a>
+                    <a class="btn explore-btn" href="./login.html">Log In</a>
+                </div>
+
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <!-- banner -->
+        <section class="menu-banner position-relative text-white">
+            <div class="overlay"></div>
+            <div class="container text-center py-5">
+                <h1 class="display-4 fw-bold mb-3">Delicious Meals Delivered To You</h1>
+                <p class="lead mb-4">Explore our menu and get your favorite dishes hot and fresh.</p>
+                <a href="#menu" class="btn btn-warning btn-lg fw-bold button">Order Now</a>
+            </div>
+        </section>
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section section_padding">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-danger fs-1"><i class="bi bi-basket2-fill me-2"></i>Our Menu</h2>
+                    <p class="text-muted">Choose your favorite dishes from our delicious menu</p>
+                </div>
+                <div class="row g-4">
+
+                    <!-- Menu Item 1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <div class="card menu-card shadow">
+                            <div class="menu-img position-relative">
+                                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+                                    alt="Cheese Pizza" class="img-fluid">
+                                <div class="overlay-icons d-flex justify-content-center align-items-center gap-2">
+                                    <a href="#"><i class="bi bi-share-fill"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="menu-title fw-bold">Cheese Pizza</h5>
+                                <p class="menu-price text-warning fw-bold">$12.99</p>
+                                <form action="backend/order.php" method="POST">
+    <input type="hidden" name="food_name" value="Cheese Pizza">
+    <input type="hidden" name="price" value="12.99">
+    <button type="submit" class="btn btn-warning mt-2">Order Now</button>
+</form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 2 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card menu-card shadow">
+                            <div class="menu-img position-relative">
+                                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+                                    alt="Chicken Burger" class="img-fluid">
+                                <div class="overlay-icons d-flex justify-content-center align-items-center gap-2">
+                                    <a href="#"><i class="bi bi-share-fill"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="menu-title fw-bold">Chicken Burger</h5>
+<p class="menu-price text-warning fw-bold">$9.99</p>
+
+<form action="backend/order.php" method="POST">
+    <input type="hidden" name="food_name" value="Chicken Burger">
+    <input type="hidden" name="price" value="9.99">
+    <button type="submit" class="btn btn-warning mt-2">Order Now</button>
+</form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 3 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <div class="card menu-card shadow">
+                            <div class="menu-img position-relative">
+                                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Pasta"
+                                    class="img-fluid">
+                                <div class="overlay-icons d-flex justify-content-center align-items-center gap-2">
+                                    <a href="#"><i class="bi bi-share-fill"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                               <h5 class="menu-title fw-bold">Creamy Pasta</h5>
+<p class="menu-price text-warning fw-bold">$11.50</p>
+
+<form action="backend/order.php" method="POST">
+    <input type="hidden" name="food_name" value="Creamy Pasta">
+    <input type="hidden" name="price" value="11.50">
+    <button type="submit" class="btn btn-warning mt-2">Order Now</button>
+</form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Cook Fresh Section -->
+        <section class="cook-video-section section_padding">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h5 class="fw-bold text-info mb-2 fs-1"><i class="bi bi-egg-fried me-2"></i>See How We Cook Fresh
+                    </h5>
+                    <h2 class="fw-bold text-danger mb-3">From Our Kitchen To Your Doorstep</h2>
+                    <p class="text-light">Watch our chefs prepare delicious meals with the freshest ingredients every
+                        day.</p>
+                </div>
+
+                <!-- Video Row -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-10 col-sm-12">
+                        <div class="ratio ratio-16x9 shadow rounded">
+                            <video controls>
+                                <source src="./vedio/food.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section class="how-it-works py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-danger">
+                        <i class="bi bi-diagram-3-fill me-2"></i>How It Works
+                    </h2>
+                    <p class="text-muted">Ordering your favorite meals is simple and fast</p>
+                </div>
+
+                <div class="row g-4 text-center">
+
+                    <!-- Step 1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in">
+                        <div class="card h-100 shadow border-0 p-4">
+                            <div class="step-icon mb-3">
+                                <i class="bi bi-search-heart-fill fs-1 text-warning"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Browse Menu</h5>
+                            <p class="text-muted">Explore our delicious menu and choose your favorite dishes with ease.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card h-100 shadow border-0 p-4">
+                            <div class="step-icon mb-3">
+                                <i class="bi bi-basket2-fill fs-1 text-warning"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Add to Cart</h5>
+                            <p class="text-muted">Select your items, customize if needed, and add them to your cart.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-up">
+                        <div class="card h-100 shadow border-0 p-4">
+                            <div class="step-icon mb-3">
+                                <i class="bi bi-truck fs-1 text-warning"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2">Fast Delivery</h5>
+                            <p class="text-muted">Sit back and relax while we deliver your fresh meals hot and on time.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- footer -->
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+
+            <div class="row gy-4">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a href="#" class="d-inline-block mb-2 footer_brand" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <img src="./images/others/food_logo.png" alt="FoodieExpress">
+                    </a>
+                    <p class="small">
+                        Delivering fresh & delicious meals right to your door. Taste the difference every day!
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 text-center text-md-start">
+                    <h5 class="mb-3 text-warning fs-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Quick
+                        Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Home</a></li>
+                        <li><a href="./menu.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Menu</a></li>
+                        <li><a href="./orders.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Orders</a></li>
+                        <li><a href="./contact.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3 text-warning fs-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Support
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Delivery Info</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3 text-warning fs-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        Subscribe</h5>
+                    <p class="small" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Get exclusive deals &
+                        fresh updates directly in your inbox.</p>
+                    <form class="d-flex flex-column flex-sm-row gap-2" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <input type="email" class="form-control" placeholder="Enter email" required>
+                        <button type="submit" class="btn btn-warning text-dark fw-bold">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="bg-secondary my-4">
+
+            <div class="row">
+                <div class="col text-center small">
+                    &copy; 2026 <a href="#" class="text-light">FoodieExpress.</a> All Rights Reserved.
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- poper js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

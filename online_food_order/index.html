@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieExpress - Online Food Ordering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap  CSS cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Topbar -->
+        <div class="bg-black py-2">
+            <div
+                class="container d-flex flex-column flex-sm-row justify-content-end align-items-center text-white small">
+
+                <span class="d-flex align-items-center gap-2 me-sm-3 mb-2 mb-sm-0">
+                    <i class="fa-solid fa-phone text-danger"></i>
+                    +91 000 123 00
+                </span>
+
+                <span class="d-flex align-items-center gap-2 me-sm-3 mb-2 mb-sm-0">
+                    <i class="fa-regular fa-envelope text-danger"></i>
+                    contact1234@example.com
+                </span>
+
+                <span class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    Lassen, Yuba City, California
+                </span>
+
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-navbar">
+            <div class="container d-flex align-items-center">
+
+                <!-- Logo-->
+               <a class="navbar-brand fw-bold order-1 order-lg-1 navbar_brand" href="./index.html">
+                    <img src="./images/others/food_logo.png" alt="food_logo">
+                </a>
+
+                <!-- Toggler-->
+                <button class="navbar-toggler order-3 order-lg-2 ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav links  -->
+                <div class="collapse navbar-collapse justify-content-center order-2 order-lg-1" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./orders.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Buttons  -->
+                <div class="d-flex ms-auto order-4 order-lg-3">
+                    <a class="btn explore-btn me-2" href="./signup.html">Sign Up</a>
+                    <a class="btn explore-btn" href="./login.html">Log In</a>
+                </div>
+
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <!-- banner -->
+        <section class="hero-section">
+            <div class="container ">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner hero_content">
+                        <div class="carousel-item active">
+                            <img src="./images/products/card3.jpg" class="d-block w-100" alt="banner">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="hero-logo">
+                                    &#127858
+                                </div>
+                                <h1 class="hero-title">SOUP</h1>
+                                <p class="hero-subtitle">Restaurant with Online Ordering System Template</p>
+                                <a href="./menu.html" class="btn btn-hero">Explore Menu</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/others/banner1.avif" class="d-block w-100" alt="banner">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="hero-logo">
+                                    &#127858
+                                </div>
+                                <h1 class="hero-title">SOUP</h1>
+                                <p class="hero-subtitle">Restaurant with Online Ordering System Template</p>
+                                <a href="./menu.html" class="btn btn-hero">Explore Menu</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/others/banner2.jpg" class="d-block w-100" alt="banner">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="hero-logo">
+                                    &#127858
+                                </div>
+                                <h1 class="hero-title ">SOUP</h1>
+                                <p class="hero-subtitle ">Restaurant with Online Ordering System Template</p>
+                                <a href="./menu.html" class="btn btn-hero">Explore Menu</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--card part  -->
+        <section class="card_iteam section_padding">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="text-center mb-5">
+                    <h2 class="text-info"> <span>&#x1F37D</span> Our Popular Dishes</h2>
+                    <p class=" mx-auto section-text">
+                        Discover our most loved meals, prepared with fresh ingredients
+                        and delivered hot to your doorstep.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card food-card border-0 shadow-sm" data-aos="fade-right">
+                            <div class="card-img-wrapper">
+                                <img src="./images/products/pizza.jpg" class="card-img-top" alt="Pizza">
+                                <div class="overlay">
+                                    <a href="./menu.html" class="btn btn-light">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Delicious Pizza</h5>
+                                <p class="card-text text-muted">
+                                    Freshly baked pizza with premium ingredients.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card food-card border-0 shadow-sm" data-aos="fade-up">
+                            <div class="card-img-wrapper">
+                                <img src="./images/products/burger.avif" class="card-img-top" alt="Burger">
+                                <div class="overlay">
+                                    <a href="./menu.html" class="btn btn-light">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Tasty Burger</h5>
+                                <p class="card-text text-muted">
+                                    Juicy grilled burger with fresh veggies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card food-card border-0 shadow-sm" data-aos="fade-left">
+                            <div class="card-img-wrapper">
+                                <img src="./images/products/pasta.webp" class="card-img-top" alt="Pasta">
+                                <div class="overlay">
+                                    <a href="./menu.html" class="btn btn-light">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Creamy Pasta</h5>
+                                <p class="card-text text-muted">
+                                    Italian pasta with rich creamy sauce.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- gallery part -->
+        <section class="gallery section_padding">
+            <div class="container ">
+                <h2 class="text-center text-warning"> <i class="bi bi-basket2-fill me-2"></i>
+                    Gallery</h2>
+                <h3 class="text-center py-5">
+                    Fresh Bites & Daily Delights
+                    <span class="text-danger">@FoodieExpress</span>
+                </h3>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide img-box">
+                            <img src="./images/products/chainis.jpg" class="img-fluid" alt="chainis">
+                        </div>
+
+                        <div class="swiper-slide img-box">
+                            <img src="./images/products/chaumin.jpg" class="img-fluid" alt="chaumin">
+                        </div>
+
+                        <div class="swiper-slide img-box">
+                            <img src="./images/products/momo.avif" class="img-fluid" alt="momo">
+                        </div>
+
+                        <div class="swiper-slide img-box">
+                            <img src="./images/products/pizza1.jpg" class="img-fluid" alt="pizza1">
+                        </div>
+
+                        <div class="swiper-slide img-box">
+                            <img src="./images/products/menu-sample-pizza.jpg" class="img-fluid" alt="pizza1">
+                        </div>
+
+                        <div class="swiper-slide img-box">
+                            <img src="./images/products/burger.avif" class="img-fluid" alt="burger">
+                        </div>
+
+                        <div class="swiper-slide img-box">
+                            <img src="./images/products/chiken.webp" class="img-fluid" alt="chiken">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- cook part -->
+        <section class="cook section_padding">
+            <div class="container text-center text-uppercase">
+                <h2 class="Bowls_heading text-info fs-1 fs-md-1">
+                    <i class="bi bi-fire me-2"></i>
+                    See How We <span class="text-warning">Cook Fresh</span>
+                </h2>
+            </div>
+
+            <div class="card text-bg-dark mt-5 position-relative " data-aos="zoom-in-up">
+                <img src="./images/products/cook_img.webp" class="card-img img-fluid" alt="cooking_img">
+                <div class="card-img-overlay d-flex flex-column justify-content-center text-center px-3">
+                    <h5 class="card-title cook_heading fs-2 fs-md-1 mb-3 text-black">You Tap, We Cook!</h5>
+                    <p class="card-text cook_text fs-4 fs-md-4 text-black">Every order is prepared fresh. No reheating,
+                        no
+                        shortcuts.</p>
+                </div>
+            </div>
+
+            <div class="row py-5 g-4 text-center">
+                <div class="col-12 col-md-4">
+                    <h3 class="text-warning fs-3 fs-md-4" data-aos="fade-up">Fresh Ingredients</h3>
+                    <p class="text-light mx-auto fs-6 fs-md-5" data-aos="fade-up">Sourced daily from local markets</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="text-warning fs-3 fs-md-4" data-aos="fade-up">Made to Order</h3>
+                    <p class="text-light mx-auto fs-6 fs-md-5" data-aos="fade-up">Cooking starts only after you order
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="text-warning fs-3 fs-md-4" data-aos="fade-up">Expert Chefs</h3>
+                    <p class="text-light mx-auto fs-6 fs-md-5" data-aos="fade-up">Trained in authentic global cuisines
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Ready part -->
+        <section class="ready section_padding">
+            <div class="container text-center">
+
+                <div class="center bg-warning mx-3 mx-md-5 px-3 px-md-5 py-5 py-md-5 rounded-4" data-aos="flip-up">
+                    <h2 class="text-uppercase fw-bolder ready_heading fs-3 fs-md-1 mb-3">
+                        Ready to taste the difference?
+                    </h2>
+                    <p class="fs-6 fs-md-5 mb-4 text-secondary">
+                        Join thousands who've discovered that world-class flavours belong in your everyday — not just
+                        special occasions.
+                    </p>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                        <button type="button" class="btn btn-light btn-lg fw-semibold">
+                            <i class="fa-solid fa-mobile me-2"></i> Download App
+                        </button>
+                        <a href="./menu.html" class="btn btn-light btn-lg fw-semibold border text-capitalize">
+Order Online
+</a>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--why-us part  -->
+        <section class="why-us section_padding  bg-dark text-light">
+            <div class="container text-center">
+                <h2 class="fs-2 fs-md-1 fw-bold mb-3">
+                       <i class="bi bi-star-fill me-2"></i>
+                    Why Choose <span class="text-warning">FoodieExpress?</span>
+                </h2>
+                <p class="fs-6 fs-md-5 mb-5">
+                    Experience fast delivery, fresh meals, and seamless online ordering like never before.
+                </p>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-12 col-md-4">
+                        <div class="card feature-card border-0 text-center p-4 bg-info  h-100" data-aos="fade-right"
+                            data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="mb-3 fs-1 text-warning">
+                                &#127829
+                            </div>
+                            <h5 class="fw-bold mb-2 text-black">Fresh & Hot Meals</h5>
+                            <p class="small mb-0 text-black">
+                                Every dish is made fresh and delivered hot to your door.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card feature-card border-0 text-center p-4 bg-info  h-100">
+                            <div class="mb-3 fs-1 text-warning">
+                                &#128640
+                            </div>
+                            <h5 class="fw-bold mb-2 text-black">Fast Delivery</h5>
+                            <p class="small mb-0 text-black">
+                                Get your food delivered in record time with real-time tracking.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card feature-card border-0 text-center p-4 bg-info  h-100" data-aos="fade-down"
+                            data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="mb-3 fs-1 text-warning">
+                                &#128241
+                            </div>
+                            <h5 class="fw-bold mb-2 text-black">Easy Ordering</h5>
+                            <p class="small mb-0 text-black">
+                                Order anytime from your phone or desktop with a seamless interface.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- team section -->
+        <section class="team-section section_padding bg-dark text-light">
+            <div class="container text-center">
+
+
+                <h2 class="text-info fs-md-1 fw-bold mb-3">
+                     👨‍🍳
+                    Meet Our <span class="text-warning">Chefs</span>
+                </h2>
+                <p class="fs-6 fs-md-5 mb-5 text-light">
+                    The talented people who make your favorite meals fresh, fast, and delicious every day.
+                </p>
+                <div class="swiper teamSwiper">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center bg-light bg-opacity-10">
+                                <img src="./images/products/shafe1.jpg" class="card-img-top rounded-circle mx-auto mt-3"
+                                    style="width:150px; height:150px;" alt="Chef 1">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">John Doe</h5>
+                                    <p class="card-text text-warning small">Head Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center bg-info bg-opacity-10">
+                                <img src="./images/products/shafe2.webp"
+                                    class="card-img-top rounded-circle mx-auto mt-3" style="width:150px; height:150px;"
+                                    alt="Chef 2">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">Emily Clark</h5>
+                                    <p class="card-text text-warning small">Pastry Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center bg-secondary bg-opacity-10">
+                                <img src="./images/products/shape8.jpg" class="card-img-top rounded-circle mx-auto mt-3"
+                                    style="width:150px; height:150px;" alt="Chef 3">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">Michael Lee</h5>
+                                    <p class="card-text text-warning small">Grill Master</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center  bg-warning bg-opacity-10">
+                                <img src="./images/products/shape4.jpg" class="card-img-top rounded-circle mx-auto mt-3"
+                                    style="width:150px; height:150px;" alt="Chef 4">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">Sara Khan</h5>
+                                    <p class="card-text text-warning small">Sous Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center bg-light bg-opacity-10">
+                                <img src="./images/products/shape6.jpg" class="card-img-top rounded-circle mx-auto mt-3"
+                                    style="width:150px; height:150px;" alt="Chef 1">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">John Doe</h5>
+                                    <p class="card-text text-warning small">Head Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center bg-info bg-opacity-10">
+                                <img src="./images/products/shape5.webp"
+                                    class="card-img-top rounded-circle mx-auto mt-3" style="width:150px; height:150px;"
+                                    alt="Chef 2">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">Emily Clark</h5>
+                                    <p class="card-text text-warning small">Pastry Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center bg-secondary bg-opacity-10">
+                                <img src="./images/products/shape6.jpg" class="card-img-top rounded-circle mx-auto mt-3"
+                                    style="width:150px; height:150px;" alt="Chef 3">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">Michael Lee</h5>
+                                    <p class="card-text text-warning small">Grill Master</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center  bg-warning bg-opacity-10">
+                                <img src="./images/products/shape9.avif"
+                                    class="card-img-top rounded-circle mx-auto mt-3" style="width:150px; height:150px;"
+                                    alt="Chef 4">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">Sara Khan</h5>
+                                    <p class="card-text text-warning small">Sous Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center bg-secondary bg-opacity-10">
+                                <img src="./images/products/shape10.avif"
+                                    class="card-img-top rounded-circle mx-auto mt-3" style="width:150px; height:150px;"
+                                    alt="Chef 3">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">Michael Lee</h5>
+                                    <p class="card-text text-warning small">Grill Master</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide group">
+                            <div class="card team-card border-0 h-100 text-center  bg-warning bg-opacity-10">
+                                <img src="./images/products/shape11.avif"
+                                    class="card-img-top rounded-circle mx-auto mt-3" style="width:150px; height:150px;"
+                                    alt="Chef 4">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-light">Sara Khan</h5>
+                                    <p class="card-text text-warning small">Sous Chef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="swiper-button-next team-next"></div>
+                    <div class="swiper-button-prev team-prev"></div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+
+            <div class="row gy-4">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <a href="#" class="d-inline-block mb-2 footer_brand" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <img src="./images/others/food_logo.png" alt="FoodieExpress">
+                    </a>
+                    <p class="small">
+                        Delivering fresh & delicious meals right to your door. Taste the difference every day!
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-2">
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light fs-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 text-center text-md-start">
+                    <h5 class="mb-3 text-warning fs-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Quick
+                        Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Home</a></li>
+                        <li><a href="./menu.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Menu</a></li>
+                        <li><a href="./orders.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Orders</a></li>
+                        <li><a href="./contact.html" class="text-light text-decoration-none " data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3 text-warning fs-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Support
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Delivery Info</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <h5 class="mb-3 text-warning fs-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        Subscribe</h5>
+                    <p class="small" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Get exclusive deals &
+                        fresh updates directly in your inbox.</p>
+                    <form class="d-flex flex-column flex-sm-row gap-2" data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom">
+                        <input type="email" class="form-control" placeholder="Enter email" required>
+                        <button type="submit" class="btn btn-warning text-dark fw-bold">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="bg-secondary my-4">
+
+            <div class="row">
+                <div class="col text-center small">
+                    &copy; 2026 <a href="#" class="text-light">FoodieExpress.</a> All Rights Reserved.
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- poper js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

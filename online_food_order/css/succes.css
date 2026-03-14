@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #1e3d59, #c17c3a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #1e3d59;
+    margin-bottom: 10px;
+    font-size: 60px;
+    text-shadow: 5px 5px 5px white;
+}
+
+h4 {
+    text-align: center;
+    color: #240221;
+    font-size: 30px;
+    padding-top: 20px;
+}

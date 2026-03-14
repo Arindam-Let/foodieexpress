@@ -1,0 +1,48 @@
+.forgot-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f3ed, #ead7c3);
+}
+
+.forgot-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.forgot-card h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.forgot-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.form-control {
+  height: 48px;
+  border-radius: 12px;
+}
+
+.btn-reset {
+  background: #9c5c2a;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.btn-reset:hover {
+  background: #7b451f;
+}
+
+.back-link {
+  color: #9c5c2a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
